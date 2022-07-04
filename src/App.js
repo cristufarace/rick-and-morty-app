@@ -26,7 +26,7 @@ function App() {
   useEffect(() => {
     getData(firstUrl);
   }, []);
-  //a travez de useEffect hago que cuando se renderice por primera vez el comoponente principal app.... haga una llamada a a la api..... (la llamada la hace una sola vez pq el array esta vacio) como tiene un array de dependencias vacios se va a ajecutar una sola vez
+  //a travez de useEffect hago que cuando se renderice por primera vez el comoponente principal app.... ejecute una sola vez la llamada la funcion ------getData----- que pide datos a la api..... (la llamada la hace una sola vez pq el array esta vacio) como tiene un array de dependencias vacios se va a ajecutar una sola vez
 
 
   const onPrevius = ()=>{
@@ -44,8 +44,6 @@ function App() {
       la primer propiedad "prev" esta compuesta por el link "prev" que vienen en el objeto info.
       Este objeto info se lleno de informacion a travez de que su manejador setinfo lo "lleno" con los valores que venian de la api a la cual le hize una peticion con la funcion asincrona getData */}
       <Pagination
-        prev={info.prev}  
-        next={info.next}
         onPrevius={onPrevius}
         onNext={onNext}
         

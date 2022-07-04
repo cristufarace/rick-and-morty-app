@@ -1,6 +1,6 @@
 import React from "react";
 
-const Pagination = ({ prev, next, onPrevius, onNext }) => {
+const Pagination = ({ onPrevius, onNext }) => {
   const handlePrevius = () => {
     onPrevius();
   };
